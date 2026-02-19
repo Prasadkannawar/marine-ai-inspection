@@ -2,8 +2,11 @@ from supabase import create_client
 import uuid
 import os
 
-SUPABASE_URL = "https://pfecxmgqmtsjmkyqutmk.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBmZWN4bWdxbXRzam1reXF1dG1rIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE1MjMyMjMsImV4cCI6MjA4NzA5OTIyM30.90Pzb2JbseLrQKECANEtVT-qGDVMCNvy_h0HlEnZkTQ"   # ⚠ Replace with regenerated key
+import streamlit as st
+
+
+SUPABASE_URL = st.secrets["SUPABASE_URL"]
+SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 

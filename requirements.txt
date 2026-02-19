@@ -1,0 +1,8 @@
+streamlit
+ultralytics
+opencv-python
+reportlab
+supabase
+python-dotenv
+numpy
+pandas
